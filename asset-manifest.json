@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/countries-by-continent/static/css/main.993100bd.css",
+    "main.js": "/countries-by-continent/static/js/main.ac325f5b.js",
+    "index.html": "/countries-by-continent/index.html",
+    "main.993100bd.css.map": "/countries-by-continent/static/css/main.993100bd.css.map",
+    "main.ac325f5b.js.map": "/countries-by-continent/static/js/main.ac325f5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.993100bd.css",
+    "static/js/main.ac325f5b.js"
+  ]
+}
