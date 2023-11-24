@@ -4,13 +4,15 @@ import { useEffect, useState } from "react";
 
 export function CountriesInContinent({
   countries,
-  countryName,
+  countryNameInput,
   noCountriesInRegion,
 }) {
   let countryList = [];
   for (let i = 0; i < countries.length; i++) {
     const country = countries[i];
-    if (country.name.common.toLowerCase().includes(countryName.toLowerCase())) {
+    if (
+      country.name.common.toLowerCase().includes(countryNameInput.toLowerCase())
+    ) {
       countryList.push(country);
     }
 
@@ -19,7 +21,7 @@ export function CountriesInContinent({
 
       for (const key in names) {
         if (
-          names[key].toLowerCase().includes(countryName.toLowerCase()) &&
+          names[key].toLowerCase().includes(countryNameInput.toLowerCase()) &&
           !countryList.includes(country)
         ) {
           countryList.push(country);
@@ -36,7 +38,7 @@ export function CountriesInContinent({
 
   useEffect(() => {
     checkForCountries();
-  }, [countryName]);
+  }, [countryNameInput]);
 
   return (
     <div className={style.grid}>
